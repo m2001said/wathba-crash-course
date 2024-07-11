@@ -4,7 +4,11 @@
 
 ## معرض المشاريع (Project Gallery)
 
-### My Personal Website (موقع خاص بي)
+### Wathba Website (برنامج وثبة)
+
+![Wathba Website](./images/main/design0.webp)
+
+### My Personal Website (معرض أعمال)
 
 ![My Personal Website](./images/main/design1.webp)
 
