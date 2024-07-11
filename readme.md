@@ -2,6 +2,8 @@
 
 ## For Wathba Program
 
+[Visit the Website](https://wathba-crash-course.vercel.app/)
+
 ## معرض المشاريع (Project Gallery)
 
 ### Wathba Website (برنامج وثبة)
