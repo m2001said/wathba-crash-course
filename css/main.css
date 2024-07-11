@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Define color variables for easier management and reuse */
+:root {
+  --primary-color: #133d3d; /* Dark Teal */
+  --secondary-color: #286b6b; /* Medium Teal */
+  --extra-light-1: #53b8b8; /* Light Teal 1 */
+  --extra-light-2: #8ddcdc; /* Light Teal 3 */
+  --extra-light-3: #c9f0f0; /* Light Teal 2 */
+  --white: #ffffff; /* White */
+  --gradient-1: linear-gradient(to bottom right, #133d3d, #286b6b);
+
+  --radius: 10px;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--primary-color);
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------general----- */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+}
+.section {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  color: var(--primary-color);
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ------------------ */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--gradient-1);
+}
+
+.nav__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__links li {
+  list-style: none;
+}
+
+.nav__links a {
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+  color: var(--secondary-color);
+}
+/* -------------------------------- */
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../images/main/main.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* left , top */
+  background-position: 25% 60%;
+  height: 100vh;
+}
+
+.header__content {
+  background: #3c5e5c70;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.header__content h1 {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.header__btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+}
+
+/* ------------------------ */
+
+.section__intro {
+  /* text-align: center;
+  border: 2px solid var(--secondary-color);
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  max-width: 800px;
+  margin: 40px auto; */
+}
+.intro__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  /* border: 2px solid var(--secondary-color); */
+  background: var(--extra-light-3);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 6px 20px;
+}
+.section__intro img {
+  width: 35px;
+}
+.section__intro p {
+  font-size: 1.2rem;
+}
+
+.section__goals {
+  background: var(--secondary-color);
+  /* padding: 2rem; */
+}
+
+.section__goals h1 {
+  color: var(--white);
+}
+
+.goals__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.goal__card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 200px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.goal__card:hover {
+  background: var(--extra-light-3);
+}
+.goal__card img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+/* ------------------------ */
+
+.projects__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project__card {
+  background: var(--secondary-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-align: center;
+  flex: 1 1 200px;
+  transition: all 0.3s ease;
+}
+
+.project__card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.project__card:hover {
+  transform: scale(1.05);
+}
+.project__card p {
+  padding: 1rem;
+  color: var(--white);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

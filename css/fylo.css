@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+/* 
+- Dark Blue (intro and email sign up background): 
+- Dark Blue (main background): 
+- Dark Blue (footer background): 
+- Dark Blue (testimonials background): 
+
+### Accent
+
+- Cyan (inside call-to-action gradient): 
+- Blue (inside call-to-action gradient): 
+- Light Red (error): hsl(0, 100%, 63%)
+
+*/
+
+:root {
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-secondary: hsl(217, 28%, 15%);
+  --bg-footer: hsl(216, 53%, 9%);
+  --bg-testimonials: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px;
+  width: 220px;
+  margin-top: 30px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, var(--blue), var(--cyan));
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  /* for button */
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--cyan);
+}
+
+/* header start */
+#header {
+  background: url("./images/bg-curvy-desktop.svg") no-repeat bottom/contain;
+  background-color: var(--bg-secondary);
+}
+
+#header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#header .navbar ul {
+  display: flex;
+}
+
+#header .navbar ul li a {
+  margin: 0 25px;
+  color: #fff;
+  padding-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+#header .navbar ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+#header .header-content {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 0rem 0 12rem;
+}
+
+#header .header-content img,
+#seciton-2 .row img {
+  /* for responsive */
+  max-width: 100%;
+}
+
+#header .header-content h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 3rem 0 1rem;
+}
+
+#header .header-content p {
+  max-width: 450px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+/* header end */
+/* Section 1 Start */
+#section-1,
+#seciton-2 {
+  background-color: var(--bg-main);
+  padding: 5rem 2rem;
+}
+
+#section-1 .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 7rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+#section-1 .row .item h2 {
+  font-size: 20px;
+  margin: 15px 0 5px;
+}
+
+/* Section 1 End */
+/* Section 2 Start */
+#seciton-2 .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  align-items: center;
+}
+
+#seciton-2 .row .seciton-content h2 {
+  font-size: 36px;
+  max-width: 80%;
+}
+
+#seciton-2 .row .seciton-content p {
+  margin: 20px 0;
+}
+
+#seciton-2 .row .seciton-content a {
+  color: var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  padding-bottom: 2px;
+}
+
+#seciton-2 .row .seciton-content a i {
+  font-size: 10px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+#seciton-2 .row .seciton-content a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Section 2 End */
+/* Section 3 start */
+#seciton-3 {
+  background-image: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: 10% 6%;
+  background-color: var(--bg-main);
+  padding: 5rem 0 20rem;
+}
+
+#seciton-3 .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+#seciton-3 .row .col {
+  background-color: var(--bg-testimonials);
+  padding: 2rem;
+}
+
+#seciton-3 .row .col .user {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#seciton-3 .row .col .user img {
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#seciton-3 .row .col .user h3 {
+  font-size: 12px;
+}
+
+#seciton-3 .row .col .user p {
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+/* Section 3 End */
+/* Footer start */
+/* sign up start */
+#footer {
+  background-color: var(--bg-footer);
+  padding-bottom: 5rem;
+}
+
+#footer .sign-up {
+  background-color: var(--bg-secondary);
+  transform: translateY(-50%);
+  padding: 3rem 5rem;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+#footer .sign-up h2 {
+  font-size: 30px;
+}
+
+#footer .sign-up p {
+  margin: 15px 0;
+}
+
+#form {
+  max-width: 700px;
+  margin: auto;
+}
+
+#form input {
+  padding: 15px;
+  margin-right: 20px;
+  border-radius: 25px;
+  border: none;
+  width: 65%;
+}
+
+#form .btn {
+  width: 30%;
+}
+
+/* sign up end */
+
+/* Footer content start */
+#footer .row {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin-top: 1rem;
+}
+
+#footer .row .col {
+  display: flex;
+  align-items: start;
+}
+
+#footer .row .col img {
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+#footer .row ul li {
+  margin-bottom: 15px;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer .row ul li img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#footer .social-links i {
+  margin-right: 5px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 2;
+  transition: all 0.3s ease;
+}
+
+#footer .social-links i:hover {
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+}
+
+/* Footer content end */
+/* Footer end */
+
+/* Responsive Start */
+@media (max-width: 700px) {
+  #header .navbar img {
+    width: 80px;
+  }
+
+  #header .navbar ul li a {
+    margin: 0 10px;
+  }
+
+  #section-1 .row {
+    grid-template-columns: 1fr;
+  }
+
+  #seciton-2 .row,
+  #seciton-3 .row {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  #seciton-2 .row .seciton-content h2 {
+    font-size: 25px;
+  }
+
+  #seciton-3 {
+    background-position: 10% 4%;
+  }
+
+  #footer .sign-up h2 {
+    font-size: 22px;
+  }
+
+  #form input,
+  #form .btn {
+    display: block;
+    width: 100%;
+  }
+
+  #footer .sign-up {
+    padding: 3rem 2rem;
+  }
+
+  #footer .row {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+
+/* Responsive End */
