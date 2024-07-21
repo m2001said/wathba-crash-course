@@ -99,6 +99,7 @@ nav {
   /* left , top */
   background-position: 25% 60%;
   height: 100vh;
+  position: relative;
 }
 
 .header__content {
@@ -136,6 +137,34 @@ nav {
 
 .btn:hover {
   background: var(--primary-color);
+}
+
+.go-note-btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gradient-1);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: all 0.3s;
+  animation: bounce 2s infinite;
+}
+
+.go-note-btn:hover {
+  background: var(--gradient-2);
+  color: var(--primary-color);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10px);
+  }
 }
 
 /* ------------------------ */
