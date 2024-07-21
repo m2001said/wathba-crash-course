@@ -9,6 +9,7 @@
   --extra-light-3: #c9f0f0; /* Light Teal 2 */
   --white: #ffffff; /* White */
   --gradient-1: linear-gradient(to bottom right, #133d3d, #286b6b);
+  --gradient-2: linear-gradient(to top, #c9f0f0, #ffffff);
 
   --radius: 10px;
   --max-width: 1200px;
@@ -187,6 +188,7 @@ nav {
   padding: 1rem;
   text-align: center;
   flex: 1 1 200px;
+  /* max-width: 200px; */
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -230,6 +232,32 @@ nav {
   color: var(--white);
 }
 
+/* ----------------------- */
+
+.section__notes {
+  background: var(--gradient-2);
+  /* align-items: flex-start; */
+}
+.notes__list {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+.notes__list li {
+  margin-bottom: 1rem;
+}
+
+.note__btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 1rem 0 2em 0;
+}
+.note__btn {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+}
+/* ----------------------- */
 .footer {
   display: flex;
   justify-content: space-between;
