@@ -18,8 +18,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  /* color: #fff;
-  background: var(--bg-main); */
+  color: white;
+  background: var(--bg-main);
 }
 
 ul {
@@ -28,4 +28,76 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/* -----------------nav---------------- */
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a:hover {
+  cursor: pointer;
+}
+
+/* --------------------header----------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  gap: 20px;
+  /* to center the header */
+  margin: 0 auto;
+
+  /* to center ant text */
+  text-align: center;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.header-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--cyan);
+  padding: 15px 55px;
+  font-size: 18px;
+  border-radius: 40px;
+  color: white;
+}
+
+/* ----------------services------------- */
+
+.services {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  gap: 20px;
+  text-align: center;
 }
